@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PuertaActivity"
+    android:orientation="vertical"
+    android:background="#F4F6F7">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/background_ventiladores"
+        android:text="Ventiladores"
+        android:textColor="#ffffff"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="80dp"
+        />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="30dp"
+        android:layout_margin="30dp"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:background="@drawable/designcontrols">
+
+        <Switch
+            android:id="@+id/swOnOff"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Salon 1"
+            android:textSize="25dp"
+            android:textOn="Encendiendo..."
+            android:textOff="Apagando..."
+            android:onClick="onClick"
+            />
+
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InicioActivity"
+    android:orientation="vertical"
+    android:background="#F4F6F7">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentTop="true"
+        android:text="Menu"
+        android:textSize="20dp"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:background="@drawable/background_isesion"
+        />
+
+
+
+    <RelativeLayout
+        android:id="@+id/Frames1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:background="@drawable/background_menu">
+
+
+
+
+        <GridLayout
+            android:id="@+id/Frames2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:columnCount="2"
+            android:rowCount="2">
+
+            <ImageButton
+                android:id="@+id/firstFrame"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:padding="30dp"
+                android:background="#F1C40F"
+                android:layout_margin="10dp"
+                android:src="@drawable/ic_puerta"
+                android:scaleType="fitXY"
+                android:onClick="onClick"
+                />
+
+            <ImageButton
+                android:id="@+id/secondFrame"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:padding="30dp"
+                android:background="#2471A3"
+                android:layout_margin="10dp"
+                android:src="@drawable/ic_ventilador"
+                android:scaleType="fitXY"
+                android:onClick="onClick"
+                />
+
+            <ImageButton
+                android:id="@+id/thirdFrame"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:padding="30dp"
+                android:background="#16A085"
+                android:layout_margin="10dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_luces"
+                android:onClick="onClick"
+                />
+
+            <ImageButton
+                android:id="@+id/quarterFrame"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:padding="30dp"
+                android:background="#4A235A"
+                android:layout_margin="10dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_ascensor"
+                android:onClick="onClick"
+                />
+        </GridLayout>
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

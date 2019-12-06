@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center"
+        android:text="Iniciar Sesion"
+        android:textColor="#ffffff"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:background="@drawable/background_isesion"
+        android:layout_alignParentTop="true"
+        />
+
+
+    <ImageView
+        android:id="@+id/edificio"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/edificio"
+        android:layout_below="@id/title"
+        android:layout_above="@id/datos"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        />
+
+
+
+    <LinearLayout
+        android:id="@+id/datos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:padding="30dp"
+        android:layout_margin="30dp"
+        android:background="@drawable/background_iniciar">
+
+
+
+        <TextView
+            android:id="@+id/textCorreo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email"
+            android:textColor="#2C3E50"
+            android:textSize="20dp"/>
+
+        <EditText
+            android:id="@+id/in_email"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:textColorHint="#FFFFFF"
+            android:gravity="center"
+            android:inputType="textEmailAddress"
+            android:singleLine="true"
+            />
+
+        <TextView
+            android:id="@+id/textContraseña"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Contraseña"
+            android:textColor="#2C3E50"
+            android:singleLine="true"
+            android:textSize="20dp"/>
+
+        <EditText
+            android:id="@+id/in_contraseña"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColorHint="#FFFFFF"
+            android:inputType="textPassword"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txtRegistro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/registro_link"
+        android:layout_margin="10dp"
+        android:textColor="#212F3D"
+        android:textStyle="bold"
+        android:layout_below="@id/datos"
+        android:layout_centerInParent="true"/>
+
+    <Button
+        android:id="@+id/btnIniciarsesion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtRegistro"
+        android:text="Iniciar sesion"
+        android:textColor="#ffffff"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="20dp"
+        android:padding="10dp"
+        android:background="@drawable/boton_iniciarsesion"
+        android:drawableLeft="@drawable/ic_login"
+        />
+
+</RelativeLayout>

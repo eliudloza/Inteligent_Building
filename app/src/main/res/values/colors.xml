@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="colorInicio">#17202A</color>
+    <color name="colorPuerta">#FFB300</color>
+    <color name="colorVentilador">#154360</color>
+    <color name="colorLogin">#17202A</color>
+    <color name="colorAscensor">#4A235A</color>
+</resources>
