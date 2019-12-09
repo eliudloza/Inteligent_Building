@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".PuertaActivity"
+    android:orientation="vertical"
     android:background="#F4F6F7">
 
     <TextView
@@ -18,13 +19,41 @@
         android:gravity="center"
         android:textStyle="bold"
         android:layout_alignParentTop="true"
-        android:layout_centerInParent="true"/>
+        android:layout_marginBottom="80dp"/>
 
     <RelativeLayout
+        android:id="@+id/controles"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerInParent="true">
+        android:gravity="center"
+        android:padding="30dp"
+        android:layout_margin="30dp"
+        android:background="@drawable/designcontrols"
+        android:layout_centerInParent="true"
+        >
 
+        <Switch
+            android:id="@+id/swPuertaUno"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Salon 1"
+            android:textSize="25dp"
+            android:layout_margin="20dp"
+            android:textOn="Encendido"
+            android:textOff="Apagado"
+            />
+
+        <Switch
+            android:id="@+id/swPuertaDos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Salon 2"
+            android:textSize="25dp"
+            android:layout_margin="20dp"
+            android:textOn="Encendido"
+            android:textOff="Apagado"
+            android:layout_below="@id/swPuertaUno"
+            />
 
 
 

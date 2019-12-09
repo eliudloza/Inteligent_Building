@@ -3,9 +3,11 @@ package com.example.inteligent_building;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.os.Build;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.view.Window;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
@@ -23,7 +25,7 @@ public class RegistroActivity extends AppCompatActivity implements View.OnClickL
 
     private RequestQueue fRequestQueue;
     private VolleySingleton volley;
-
+    Window window;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -34,6 +36,11 @@ public class RegistroActivity extends AppCompatActivity implements View.OnClickL
 
         Button btnRegister = findViewById(R.id.btnRegistrar);
         btnRegister.setOnClickListener(this);
+
+        if (Build.VERSION.SDK_INT >= 21){
+            window = this.getWindow();
+            window.setStatusBarColor(this.getResources().getColor(R.color.colorLogin));
+        }
 
     }
 
