@@ -46,12 +46,10 @@ public class VentiladorActivity extends AppCompatActivity implements View.OnClic
         swOnOff = (Switch)findViewById(R.id.swOnOff);
         volley = VolleySingleton.getInstance(this.getApplicationContext());
         fRequestQueue = volley.getRequestQueue();
-
     }
 
     public void encender_Apagar(){
         String swOn, swOff;
-
         if (swOnOff.isChecked()){
             swOn = swOnOff.getTextOn().toString();
             Toast mensaje = Toast.makeText(getApplicationContext(), swOn , Toast.LENGTH_SHORT);

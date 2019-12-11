@@ -33,26 +33,28 @@
         >
 
         <Switch
-            android:id="@+id/swPuertaUno"
+            android:id="@+id/swUnoA1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Salon 1"
+            android:text="Sistema alumbrado 1"
             android:textSize="25dp"
             android:layout_margin="20dp"
             android:textOn="Encendido"
             android:textOff="Apagado"
+            android:onClick="onClick"
             />
 
         <Switch
-            android:id="@+id/swPuertaDos"
+            android:id="@+id/swUnoA2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Salon 2"
+            android:text="Sistema alumbrado 2"
             android:textSize="25dp"
             android:layout_margin="20dp"
             android:textOn="Encendido"
             android:textOff="Apagado"
-            android:layout_below="@id/swPuertaUno"
+            android:layout_below="@id/swUnoA1"
+            android:onClick="onClick"
             />
 
 

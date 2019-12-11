@@ -37,10 +37,11 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="20dp"
-            android:text="Laboratorio"
+            android:text="Puerta 1"
             android:textSize="25dp"
             android:textOn="Encendido"
             android:textOff="Apagado"
+            android:onClick="onClick"
             />
 
         <Switch
@@ -48,11 +49,12 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="20dp"
-            android:text="Aula N° 1"
+            android:text="Puerta 2"
             android:textSize="25dp"
             android:textOn="Encendido"
             android:textOff="Apagado"
             android:layout_below="@+id/swUno"
+            android:onClick="onClick"
             />
 
         <Switch
@@ -60,11 +62,25 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="20dp"
-            android:text="Aula N° 2"
+            android:text="Puerta 3"
             android:textSize="25dp"
             android:textOn="Encendido"
             android:textOff="Apagado"
             android:layout_below="@+id/swDos"
+            android:onClick="onClick"
+            />
+
+        <Switch
+            android:id="@+id/swCuatro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:text="Puerta corrediza"
+            android:textSize="25dp"
+            android:textOn="Encendido"
+            android:textOff="Apagado"
+            android:layout_below="@+id/swTres"
+            android:onClick="onClick"
             />
 
     </RelativeLayout>
