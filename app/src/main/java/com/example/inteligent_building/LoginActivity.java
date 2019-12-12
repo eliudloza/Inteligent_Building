@@ -67,10 +67,8 @@ public class LoginActivity extends AppCompatActivity {
     private void login() {
 
         final JSONObject data = new JSONObject();
-
         EditText enterEmail = findViewById(R.id.in_email);
         EditText enterPassword = findViewById(R.id.in_contraseña);
-
         String email = enterEmail.getText().toString();
         String password = enterPassword.getText().toString();
 
@@ -80,7 +78,6 @@ public class LoginActivity extends AppCompatActivity {
         } catch (JSONException e) {
             e.printStackTrace();
         }
-
         JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(Request.Method.POST, url, data, new Response.Listener<JSONObject>() {
             @Override
             public void onResponse(JSONObject response) {
@@ -101,6 +98,4 @@ public class LoginActivity extends AppCompatActivity {
         });
         fRequestQueue.add(jsonObjectRequest);
     }
-
-
 }
