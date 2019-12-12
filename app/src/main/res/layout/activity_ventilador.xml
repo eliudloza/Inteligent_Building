@@ -36,7 +36,7 @@
             android:id="@+id/swOnOff"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Salon 1"
+            android:text="Sistema Ventilacion"
             android:textSize="25dp"
             android:textOn="Encendiendo..."
             android:textOff="Apagando..."
